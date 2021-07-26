@@ -76,7 +76,7 @@ ul {
   -ms-transform: rotate(350deg);
   -o-transform: rotate(350deg);
   transform: rotate(350deg);
-  background-image: url(shopHero.webp);
+  background-image: url(shopHero-50-percent.webp);
 }
 .selectedPage {
   border-bottom: 2px solid #be90d4;
@@ -99,8 +99,8 @@ ul {
   justify-content: space-between;
 }
 .threeColImg {
-  height: auto;
-  width: 100%;
+  border-radius: 8px;
+  width: 300px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
