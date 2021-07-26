@@ -123,8 +123,6 @@ iframe {
 }
 
 main {
-  /* position: relative;
-  bottom: 15rem; */
   background-color: #fafafa;
   text-align: center;
   grid-row: 4 / 5;
