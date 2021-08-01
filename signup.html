@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="ShopBuddy | Shopping List and Money Saving Application"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopBuddy</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>
+          <a href="index.html">ShopBuddy</a>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="premium.html">Upgrade</a>
+            </li>
+            <li>
+              <a href="featurerequest.html">Request A Feature</a>
+            </li>
+            <li>
+              <a
+                class="selectedPage"
+                id="signUp"
+                class="specialLink"
+                href="signup.html"
+                >Sign Up</a
+              >
+            </li>
+            <li>
+              <a class="specialLink" href="login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form method="POST">
+          <label for="myFName"> *First Name: </label>
+          <input
+            type="text"
+            id="myFName"
+            name="myFName"
+            placeholder="Enter your First Name."
+            required
+          />
+          <label for="myLName"> *Last Name: </label>
+          <input
+            type="text"
+            id="myLName"
+            name="myLName"
+            placeholder="Enter your Last Name."
+            required
+          />
+          <label for="myEmail"> *Email: </label>
+          <input
+            type="email"
+            id="myEmail"
+            name="myEmail"
+            placeholder="Enter your Email Address. This will be used to Sign In."
+            required
+          />
+          <label for="myPassword"> *Password: </label>
+          <input
+            type="password"
+            id="myPassword"
+            name="myPassword"
+            placeholder="Must contain at least one number, one uppercase and lowercase letter, and 8 or more characters"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required
+          />
+          <label for="myPhone"> *Phone: </label>
+          <input
+            type="tel"
+            id="myPhone"
+            name="myPhone"
+            placeholder="Enter your mobile phone number."
+            required
+          />
+          <input type="submit" id="mySubmit" value="Register" />
+        </form>
+      </main>
+      <footer>
+        Copyright © 2021 BridgerBryanLLC
+        <br />
+        <a href="mailto:bridgerbryanllc@gmail.com">bridgerbryanllc@gmail.com</a>
+      </footer>
+    </div>
+  </body>
+</html>
