@@ -33,16 +33,12 @@
               <a href="premium.html">Upgrade</a>
             </li>
             <li>
-              <a href="featurerequest.html">Request A Feature</a>
+              <a class="selectedPage" href="featurerequest.html"
+                >Request A Feature</a
+              >
             </li>
             <li>
-              <a
-                class="selectedPage"
-                id="signUp"
-                class="specialLink"
-                href="signup.html"
-                >Sign Up</a
-              >
+              <a id="signUp" class="specialLink" href="signup.html">Sign Up</a>
             </li>
             <li>
               <a class="specialLink" href="login.html">Login</a>
@@ -51,6 +47,21 @@
         </nav>
       </header>
       <main>
+        <div class="featureMain">
+          <img
+          class="featureHero"
+            alt="Photo by Artem Podrez from Pexels"
+            src="pexels-artem-podrez-10-percent.webp"
+            id="top"
+          />
+          <p class="featureText">
+            At ShopBuddy, we're constantly innovating and making changes. The
+            most important changes, are the ones that our members want. If you
+            have a feature or idea that you would like to see implemented within
+            ShopBuddy, we invite you to submit information about your feature
+            down below.
+          </p>
+        </div>
         <form method="POST">
           <label for="myEmail"> *Email: </label>
           <input
@@ -60,7 +71,9 @@
             placeholder="Enter your Email Address. This will be used to notify you if we've added your feature."
             required
           />
-          <label for="myFeatureRequest"> *Details about your Feature Request: </label>
+          <label for="myFeatureRequest">
+            *Details about your Feature Request:
+          </label>
           <textarea
             id="myFeatureRequest"
             name="myFeatureRequest"
@@ -69,7 +82,7 @@
             required
           >
           </textarea>
-          <input type="submit" id="mySubmit" value="Submit"/>
+          <input type="submit" id="mySubmit" value="Submit" />
         </form>
       </main>
       <footer>
